@@ -5,7 +5,7 @@ import time
 engine= pyttsx3.init('sapi5')
 voices= engine.getProperty('voices')
 
-engine.setProperty('voice', voices[1].id)
+engine.setProperty('voice', voices[0].id)
 
 engine.say("press t, for time, d, for date, and other keys for exit")
 engine.runAndWait()
@@ -49,5 +49,5 @@ elif dateortime=='d':
         choice = input("Continue: ")
 
 else:
-    engine.say("Thank you for using me.. bye bye sir")
+    engine.say("Thank you for using me.. bye bye")
     engine.runAndWait()
