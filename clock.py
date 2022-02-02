@@ -28,6 +28,10 @@ if dateortime=='t':
         engine.say("Should i repeat?")
         engine.runAndWait()
         choice = input("Continue: ")
+        if choice!='y':
+            engine.say("Thank you for using me.. bye bye")
+            engine.runAndWait()
+            exit()
 
 elif dateortime=='d':
     choice='y'
@@ -47,6 +51,10 @@ elif dateortime=='d':
         engine.say("should i repeat?")
         engine.runAndWait()
         choice = input("Continue: ")
+        if choice!='y':
+            engine.say("Thank you for using me.. bye bye")
+            engine.runAndWait()
+            exit()
 
 else:
     engine.say("Thank you for using me.. bye bye")
